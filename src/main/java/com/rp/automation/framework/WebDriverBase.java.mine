@@ -1,0 +1,205 @@
+package com.rp.automation.framework;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+
+
+
+
+
+import atu.testng.reports.listeners.ATUReportsListener;
+import atu.testng.reports.listeners.ConfigurationListener;
+import atu.testng.reports.listeners.MethodListener;
+
+import org.testng.annotations.Listeners;
+
+
+//*********
+
+
+
+
+
+import com.rp.automation.framework.SendMail;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.ResourceBundle;
+
+@Listeners({ ATUReportsListener.class, ConfigurationListener.class,MethodListener.class })
+/**
+ * Created by Propertyware Automation Team
+ */
+
+public class WebDriverBase {
+
+    private static BrowserType browserType;
+    public static ResourceBundle _prop = ResourceBundle.getBundle("dev");
+    public static ResourceBundle _prop1 = ResourceBundle.getBundle("atu");
+    
+    private static ThreadLocal<WebDriver> driverForThread =
+            new ThreadLocal<WebDriver>();
+    {
+		System.setProperty("atu.reporter.config", System.getProperty("user.dir")+"\\src\\test\\resources\\atu.properties");
+		//System.setProperty("atu.proj.header.logo",System.getProperty("user.dir")+"\\ProjectLogos\\RealpageLogo.png" );
+        //System.setProperty("atu.reports.dir",System.getProperty("user.dir")+"\\Reports" );           
+        //framework.atuReports.setAuthorInfoForReports();
+	}
+    
+ 
+    @BeforeClass(alwaysRun = true)
+    public static void indexDescription(){
+    	 com.rp.automation.framework.atuReports.setAuthorInfoForReports();
+    	 com.rp.automation.framework.atuReports.setIndexPageDescription(); 	 
+    }
+    
+  
+    
+    @BeforeTest(alwaysRun = true)
+    @Parameters({"browsername", "browserversion", "platform"})
+    public static void setUpTest(String browserName,
+                                 String browserVersion,
+                                 String platform) {
+    	com.rp.automation.framework.atuReports.setAuthorInfoForReports();
+        for (BrowserType browser : BrowserType.values()) {
+            if (browser.toString().toLowerCase().
+                    equals(browserName.toLowerCase())) {
+                browserType = browser;
+                break;
+            }
+        }  
+    }
+    
+   
+
+    @BeforeMethod(alwaysRun = true)
+    public void setUp() {
+    	com.rp.automation.framework.atuReports.setAuthorInfoForReports();
+        driverForThread.set(loadWebDriver());
+        com.rp.automation.framework.atuReports.setWebdriver(driverForThread.get());
+    }
+     
+    
+
+    @AfterMethod(alwaysRun = true)
+    public static void tearDown() {
+    	com.rp.automation.framework.atuReports.setAuthorInfoForReports();
+        if (driverForThread.get() != null) {
+            getDriver().quit();
+            driverForThread.remove();
+        }
+    } 
+    
+    
+    
+
+    @AfterSuite(alwaysRun = true)
+    //@AfterTest(alwaysRun = true)
+    public static void closeSetup() {
+    	com.rp.automation.framework.atuReports.setAuthorInfoForReports();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-ddHH:mm:ss");
+    	//get current date time with Date()
+    	Date date = new Date();
+    	//System.out.println(dateFormat.format(date));
+        String[] to=WebDriverBase._prop.getString("to").split(",");
+        String[] cc=WebDriverBase._prop.getString("cc").split(",");
+        String[] bcc=WebDriverBase._prop.getString("bcc").split(",");
+        String userName = WebDriverBase._prop.getString("userName");
+        String passWord = WebDriverBase._prop.getString("passWord");
+        String host = WebDriverBase._prop.getString("host");
+        String port = WebDriverBase._prop.getString("port");
+        String starttls = WebDriverBase._prop.getString("starttls");
+        String auth = WebDriverBase._prop.getString("auth");
+        boolean debug = false;
+        String socketFactoryClass=WebDriverBase._prop.getString("socketFactoryClass");
+        String fallback=WebDriverBase._prop.getString("fallback");
+        String subject="Automation Execution Results of the Script"+"-"+dateFormat.format(date);
+        String text = "Hi All,\n     \nPlease find the Automation Execution Results in attachement.\n      \nRegard's,\nPropertyware Automation Team";
+        String attachmentPath=System.getProperty("user.dir")+"//test-output//";
+        String attachmentName="index.html";
+        //String attachmentName="emailable-report.html";
+       
+    	boolean value = SendMail.sendMail(userName, passWord, host, port, starttls, auth, debug, socketFactoryClass, fallback, to, cc, bcc, subject, text, attachmentPath, attachmentName);
+    	if(value == true){
+    		System.out.println("Report Email Successfully sent to the Users Group");
+    		
+    	}
+  
+    }
+
+    
+
+
+    protected static WebDriver getDriver() {
+        return driverForThread.get();
+    }
+
+    private static DesiredCapabilities generateDesiredCapabilities(BrowserType capabilityType) {
+        DesiredCapabilities capabilities;
+
+        switch (capabilityType) {
+            case IE:
+                capabilities = DesiredCapabilities.internetExplorer();
+                capabilities.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
+                capabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, true);
+                capabilities.setCapability("requireWindowFocus", true);
+                break;
+            
+            case SAFARI:
+                capabilities = DesiredCapabilities.safari();
+                capabilities.setCapability("safari.cleanSession", true);
+                break;
+
+            case CHROME:
+                capabilities = DesiredCapabilities.chrome();
+                capabilities.setCapability("chrome.switches", Arrays.asList("--no-default-browser-check"));
+                HashMap<String, String> chromePreferences = new HashMap<String, String>();
+                chromePreferences.put("profile.password_manager_enabled", "false");
+                capabilities.setCapability("chrome.prefs", chromePreferences);
+                break;
+           
+            case FIREFOX:
+                capabilities = DesiredCapabilities.firefox();
+                break;
+
+            default:
+                capabilities = DesiredCapabilities.htmlUnit();
+                capabilities.setCapability("javascriptEnabled", "true");
+        }
+
+        return capabilities;
+    }
+
+    
+    
+    
+    private static WebDriver loadWebDriver() {
+        System.out.println("Current Browser Selection: " + browserType);
+        try {
+            return new RemoteWebDriver(new URL(_prop.getString("grid_url")),
+                    generateDesiredCapabilities(browserType));
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        throw new RuntimeException("Unable to create driver");
+    } 
+
+    
+}

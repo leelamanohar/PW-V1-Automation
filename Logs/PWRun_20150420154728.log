@@ -1,0 +1,18 @@
+[2015-04-20-47-38] [pool-1-thread-1] - INFO : Vmm_Loginpagewindow maximized
+[2015-04-20-47-50] [pool-1-thread-1] - INFO : Clicked on: Sign In Button
+[2015-04-20-47-50] [pool-1-thread-1] - INFO : Clicked on: Contacts Button
+[2015-04-20-47-55] [pool-1-thread-1] - INFO : Clicked on: Contacts Search Query
+[2015-04-20-47-56] [pool-1-thread-1] - INFO : Clicked on: Contacts Search Button
+[2015-04-20-47-58] [pool-1-thread-1] - INFO : Clicked on: DesiredContact Button
+[2015-04-20-48-00] [pool-1-thread-1] - INFO : Verified text Successfully  : OwnerFirstName of Contact FirstName Field
+[2015-04-20-48-01] [pool-1-thread-1] - INFO : Verified text Successfully  : OwnerLastName of Contact LastName Field
+[2015-04-20-48-01] [pool-1-thread-1] - INFO : Verified text Successfully  : (123) 456-7890 of Contact Phone Number Field
+[2015-04-20-48-01] [pool-1-thread-1] - INFO : Verified text Successfully  : Address1 of Contact Address Field
+[2015-04-20-48-01] [pool-1-thread-1] - INFO : Verified text Successfully  : (123) 456-7890 of Contact Alt Phone Field
+[2015-04-20-48-01] [pool-1-thread-1] - INFO : Verified text Successfully  : Address2 of Contact Address2 Field
+[2015-04-20-48-01] [pool-1-thread-1] - INFO : Verified text Successfully  : (123) 456-7890 of Contact MobilePhone Field
+[2015-04-20-48-01] [pool-1-thread-1] - INFO : Verified text Successfully  : City1 of Contact City Field
+[2015-04-20-48-01] [pool-1-thread-1] - INFO : Verified text Successfully  : (123) 456-7890 of Contact WorkPhone Field
+[2015-04-20-48-01] [pool-1-thread-1] - INFO : Verified text Successfully  : State1 of Contact State Field
+[2015-04-20-48-02] [pool-1-thread-1] - INFO : Verified text Successfully  : 12345 of Contact ZipCode Field
+[2015-04-20-48-02] [pool-1-thread-1] - INFO : Clicked on: Contact Close Button

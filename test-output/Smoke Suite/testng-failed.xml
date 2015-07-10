@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Smoke Suite]" parallel="methods">
+  <parameter name="platform" value="windows"/>
+  <parameter name="browsername" value="FIREFOX"/>
+  <parameter name="browserversion" value="27.0"/>
+  <listeners>
+    <listener class-name="com.rp.automation.framework.ScreenShotListener"/>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+  </listeners>
+  <test name="PWLogin(failed)" parallel="methods">
+    <parameter name="platform" value="windows"/>
+    <parameter name="browsername" value="FIREFOX"/>
+    <parameter name="browserversion" value="27.0"/>
+    <groups>
+      <run>
+        <include name="PWSmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.rp.pw.test.data.setup.OS_Startup">
+        <methods>
+          <include name="closeSetup"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.rp.pw.test.data.setup.OS_Startup -->
+      <class name="com.rp.pw.test.cases.PWTC1">
+        <methods>
+          <include name="indexDescription"/>
+          <include name="pwTestScenario1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.rp.pw.test.cases.PWTC1 -->
+    </classes>
+  </test> <!-- PWLogin(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

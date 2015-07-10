@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SmokeSuite]" parallel="methods">
+  <parameter name="platform" value="windows"/>
+  <parameter name="browsername" value="FIREFOX"/>
+  <parameter name="browserversion" value="32.0.0"/>
+  <listeners>
+    <listener class-name="com.rp.automation.framework.ScreenShotListener"/>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+  </listeners>
+  <test name="PWLogin(failed)" parallel="methods">
+    <parameter name="platform" value="windows"/>
+    <parameter name="browsername" value="FIREFOX"/>
+    <parameter name="browserversion" value="32.0.0"/>
+    <groups>
+      <run>
+        <include name="VMMTestGroup"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.rp.vmm.test.cases.PW22433_VMMSmokeTest">
+        <methods>
+          <include name="closeSetup"/>
+          <include name="indexDescription"/>
+          <include name="setUpTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="vvmSmokeTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.rp.vmm.test.cases.PW22433_VMMSmokeTest -->
+    </classes>
+  </test> <!-- PWLogin(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->

@@ -1,0 +1,16 @@
+grid_url=http://localhost:4444/wd/hub
+root_folder=C://workspace//PropertywareAutomation//TestData
+PWtesturl=https://rpisatpww001.realpage.com/pw/login.jsp
+PWWorkBookName=OS_DataSetup.xlsx
+PWLoginTestWB=PWTestData_Smoke.xlsx
+to=leelamanohar11@gmail.com,harshmatthew@gmail.com
+cc=leelamanohar11@gmail.com,harshmatthew@gmail.com
+bcc=leelamanohar11@gmail.com,harshmatthew@gmail.com
+userName=sairam951753
+passWord=RealPage@12
+host=smtp.gmail.com
+port=465
+starttls=true
+auth=true
+socketFactoryClass=javax.net.ssl.SSLSocketFactory
+fallback=false

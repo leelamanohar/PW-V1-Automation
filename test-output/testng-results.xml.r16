@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[STEP1]]>
+    </line>
+    <line>
+      <![CDATA[Vmm_Loginpagewindow maximized]]>
+    </line>
+    <line>
+      <![CDATA[STEP3]]>
+    </line>
+    <line>
+      <![CDATA[STEP4]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: Sign In Button]]>
+    </line>
+    <line>
+      <![CDATA[STEP6]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: Contacts Button]]>
+    </line>
+    <line>
+      <![CDATA[STEP8]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: Contacts Search Query]]>
+    </line>
+    <line>
+      <![CDATA[STEP10]]>
+    </line>
+    <line>
+      <![CDATA[STEP11]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: Contacts Search Button]]>
+    </line>
+    <line>
+      <![CDATA[STEP13]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: DesiredContact Button]]>
+    </line>
+    <line>
+      <![CDATA[STEP15]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : OwnerFirstName of Contact FirstName Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP17]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : OwnerLastName of Contact LastName Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP19]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : (123) 456-7890 of Contact Phone Number Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP21]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : Address1 of Contact Address Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP23]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : (123) 456-7890 of Contact Alt Phone Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP25]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : Address2 of Contact Address2 Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP27]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : (123) 456-7890 of Contact MobilePhone Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP29]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : City1 of Contact City Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP31]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : (123) 456-7890 of Contact WorkPhone Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP33]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : State1 of Contact State Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP35]]>
+    </line>
+    <line>
+      <![CDATA[Verified text Successfully  : 12345 of Contact ZipCode Field]]>
+    </line>
+    <line>
+      <![CDATA[STEP37]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: Contact Close Button]]>
+    </line>
+    <line>
+      <![CDATA[STEP39]]>
+    </line>
+  </reporter-output>
+  <suite name="SmokeSuite" duration-ms="35141" started-at="2015-04-20T10:17:27Z" finished-at="2015-04-20T10:18:02Z">
+    <groups>
+      <group name="VMMTestGroup">
+        <method signature="PW22433_VMMSmokeTest.vvmSmokeTest(java.util.Map)[pri:0, instance:com.rp.vmm.test.cases.PW22433_VMMSmokeTest@1a79447]" name="vvmSmokeTest" class="com.rp.vmm.test.cases.PW22433_VMMSmokeTest"/>
+      </group> <!-- VMMTestGroup -->
+    </groups>
+    <test name="PWLogin" duration-ms="35141" started-at="2015-04-20T10:17:27Z" finished-at="2015-04-20T10:18:02Z">
+      <class name="com.rp.vmm.test.cases.PW22433_VMMSmokeTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.rp.vmm.test.cases.PW22433_VMMSmokeTest@1a79447]" name="setUpTest" is-config="true" duration-ms="16" started-at="2015-04-20T15:47:27Z" finished-at="2015-04-20T15:47:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[32.0.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="indexDescription()[pri:0, instance:com.rp.vmm.test.cases.PW22433_VMMSmokeTest@1a79447]" name="indexDescription" is-config="true" duration-ms="0" started-at="2015-04-20T15:47:27Z" finished-at="2015-04-20T15:47:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- indexDescription -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.rp.vmm.test.cases.PW22433_VMMSmokeTest@1a79447]" name="setUp" is-config="true" duration-ms="5731" started-at="2015-04-20T15:47:28Z" finished-at="2015-04-20T15:47:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="vvmSmokeTest(java.util.Map)[pri:0, instance:com.rp.vmm.test.cases.PW22433_VMMSmokeTest@1a79447]" name="vvmSmokeTest" duration-ms="28488" started-at="2015-04-20T15:47:33Z" data-provider="DataProvider" finished-at="2015-04-20T15:48:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{OwnerPhone=(123) 456-7890, Description=VMMAutomation, OwnerFirstName=OwnerFirstName, OwnerZipCode=12345, OwnerAddress1=Address1, OwnerAddress2=Address2, OwnerAltPhoneNo=(123) 456-7890, OwnerWorkPhone=(123) 456-7890, PassWord=Demo1234!, OwnerState=State1, OwnerMobileNo=(123) 456-7890, VMMPortfolioSearch=AUTO, OwnerCity=City1, OwnerLastName=OwnerLastName, EmailId=ross.lewellyn@realpage.com, OwnerSearchKey=OwnerFirstName}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[STEP1]]>
+            </line>
+            <line>
+              <![CDATA[Vmm_Loginpagewindow maximized]]>
+            </line>
+            <line>
+              <![CDATA[STEP3]]>
+            </line>
+            <line>
+              <![CDATA[STEP4]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: Sign In Button]]>
+            </line>
+            <line>
+              <![CDATA[STEP6]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: Contacts Button]]>
+            </line>
+            <line>
+              <![CDATA[STEP8]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: Contacts Search Query]]>
+            </line>
+            <line>
+              <![CDATA[STEP10]]>
+            </line>
+            <line>
+              <![CDATA[STEP11]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: Contacts Search Button]]>
+            </line>
+            <line>
+              <![CDATA[STEP13]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: DesiredContact Button]]>
+            </line>
+            <line>
+              <![CDATA[STEP15]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : OwnerFirstName of Contact FirstName Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP17]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : OwnerLastName of Contact LastName Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP19]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : (123) 456-7890 of Contact Phone Number Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP21]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : Address1 of Contact Address Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP23]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : (123) 456-7890 of Contact Alt Phone Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP25]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : Address2 of Contact Address2 Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP27]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : (123) 456-7890 of Contact MobilePhone Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP29]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : City1 of Contact City Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP31]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : (123) 456-7890 of Contact WorkPhone Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP33]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : State1 of Contact State Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP35]]>
+            </line>
+            <line>
+              <![CDATA[Verified text Successfully  : 12345 of Contact ZipCode Field]]>
+            </line>
+            <line>
+              <![CDATA[STEP37]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: Contact Close Button]]>
+            </line>
+            <line>
+              <![CDATA[STEP39]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- vvmSmokeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rp.vmm.test.cases.PW22433_VMMSmokeTest@1a79447]" name="tearDown" is-config="true" duration-ms="292" started-at="2015-04-20T15:48:02Z" finished-at="2015-04-20T15:48:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeSetup()[pri:0, instance:com.rp.vmm.test.cases.PW22433_VMMSmokeTest@1a79447]" name="closeSetup" is-config="true" duration-ms="1" started-at="2015-04-20T15:48:02Z" finished-at="2015-04-20T15:48:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSetup -->
+      </class> <!-- com.rp.vmm.test.cases.PW22433_VMMSmokeTest -->
+    </test> <!-- PWLogin -->
+  </suite> <!-- SmokeSuite -->
+</testng-results>

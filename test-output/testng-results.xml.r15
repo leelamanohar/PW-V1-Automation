@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="752" started-at="2015-02-12T18:47:03Z" finished-at="2015-02-12T18:47:03Z">
+    <groups>
+      <group name="OS_DataSetup">
+        <method signature="OS_Startup.startup(java.util.Map)[pri:0, instance:com.rp.pw.test.data.setup.OS_Startup@5a446cc5]" name="startup" class="com.rp.pw.test.data.setup.OS_Startup"/>
+      </group> <!-- OS_DataSetup -->
+    </groups>
+    <test name="Default test" duration-ms="752" started-at="2015-02-12T18:47:03Z" finished-at="2015-02-12T18:47:03Z">
+      <class name="com.rp.pw.test.data.setup.OS_Startup">
+        <test-method status="FAIL" signature="setUpTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.rp.pw.test.data.setup.OS_Startup@5a446cc5]" name="setUpTest" is-config="true" duration-ms="0" started-at="2015-02-12T13:47:03Z" finished-at="2015-02-12T13:47:03Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browsername' is required by @Configuration on method setUpTest but has not been marked @Optional or defined
+in C:\Users\mharsh\AppData\Local\Temp\testng-eclipse-1071664667\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browsername' is required by @Configuration on method setUpTest but has not been marked @Optional or defined
+in C:\Users\mharsh\AppData\Local\Temp\testng-eclipse-1071664667\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="SKIP" signature="indexDescription()[pri:0, instance:com.rp.pw.test.data.setup.OS_Startup@5a446cc5]" name="indexDescription" is-config="true" duration-ms="0" started-at="2015-02-12T13:47:03Z" finished-at="2015-02-12T13:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- indexDescription -->
+        <test-method status="SKIP" signature="startup(java.util.Map)[pri:0, instance:com.rp.pw.test.data.setup.OS_Startup@5a446cc5]" name="startup" duration-ms="0" started-at="2015-02-12T13:47:03Z" data-provider="DataProvider" finished-at="2015-02-12T13:47:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=Realpage12, Username=pwautomation1@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.rp.pw.test.data.setup.OS_Startup@5a446cc5]" name="setUp" is-config="true" duration-ms="0" started-at="2015-02-12T13:47:03Z" finished-at="2015-02-12T13:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rp.pw.test.data.setup.OS_Startup@5a446cc5]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-02-12T13:47:03Z" finished-at="2015-02-12T13:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeSetup()[pri:0, instance:com.rp.pw.test.data.setup.OS_Startup@5a446cc5]" name="closeSetup" is-config="true" duration-ms="1891" started-at="2015-02-12T13:47:03Z" finished-at="2015-02-12T13:47:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSetup -->
+      </class> <!-- com.rp.pw.test.data.setup.OS_Startup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

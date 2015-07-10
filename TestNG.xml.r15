@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+ <suite name="Smoke Suite" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="com.rp.automation.framework.ScreenShotListener"/>
+        <listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+    	<listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+     	<listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+    </listeners>
+  	
+  	 <test verbose="1" name="PWLogin">
+  	    <parameter name="browsername" value="FIREFOX"/>
+        <parameter name="browserversion" value="27.0.1"/>
+        
+  	    <!--parameter name="browsername" value="IE"/>
+        <parameter name="browserversion" value="11"/--> 
+               
+        <!--parameter name="browsername" value="CHROME"/>
+        <parameter name="browserversion" value="39"/-->
+        
+        <parameter name="platform" value="windows"/>
+        <groups>
+            <run>
+<!--                 <include name="PWSmokeTest"/> -->
+                <include name="OS_DataSetup"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.rp.pw.test.cases"/>
+        </packages>
+	</test>	 
+ </suite>

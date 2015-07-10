@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< .mine
+<suite thread-count="1" name="Failed suite [Smoke Suite]" parallel="methods">
+  <parameter name="platform" value="windows"/>
+  <parameter name="browsername" value="FIREFOX"/>
+  <parameter name="browserversion" value="27.0"/>
+  <listeners>
+    <listener class-name="com.rp.automation.framework.ScreenShotListener"/>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+  </listeners>
+  <test name="PWLogin(failed)" parallel="methods">
+    <parameter name="platform" value="windows"/>
+    <parameter name="browsername" value="FIREFOX"/>
+    <parameter name="browserversion" value="27.0"/>
+    <groups>
+      <run>
+        <include name="PWSmokeTest"/>
+      </run>
+    </groups>
+=======
+<suite name="Failed suite [SmokeSuite]" parallel="methods">
+  <parameter name="platform" value="windows"/>
+  <parameter name="browsername" value="FIREFOX"/>
+  <parameter name="browserversion" value="32.0.0"/>
+  <listeners>
+    <listener class-name="com.rp.automation.framework.ScreenShotListener"/>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+  </listeners>
+  <test name="PWLogin(failed)" parallel="methods">
+    <parameter name="platform" value="windows"/>
+    <parameter name="browsername" value="FIREFOX"/>
+    <parameter name="browserversion" value="32.0.0"/>
+    <groups>
+      <run>
+        <include name="VMMTestGroup"/>
+      </run>
+    </groups>
+>>>>>>> .r16
+    <classes>
+      <class name="com.rp.vmm.test.cases.PW22433_VMMSmokeTest">
+        <methods>
+          <include name="closeSetup"/>
+<<<<<<< .mine
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.rp.pw.test.data.setup.OS_Startup -->
+      <class name="com.rp.pw.test.cases.PWTC1">
+        <methods>
+          <include name="indexDescription"/>
+          <include name="pwTestScenario1"/>
+          <include name="setUp"/>
+=======
+          <include name="indexDescription"/>
+          <include name="setUpTest"/>
+          <include name="setUp"/>
+>>>>>>> .r16
+          <include name="tearDown"/>
+<<<<<<< .mine
+=======
+          <include name="vvmSmokeTest" invocation-numbers="0"/>
+>>>>>>> .r16
+        </methods>
+<<<<<<< .mine
+      </class> <!-- com.rp.pw.test.cases.PWTC1 -->
+=======
+      </class> <!-- com.rp.vmm.test.cases.PW22433_VMMSmokeTest -->
+>>>>>>> .r16
+    </classes>
+<<<<<<< .mine
+  </test> <!-- PWLogin(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->
+=======
+  </test> <!-- PWLogin(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->
+>>>>>>> .r16

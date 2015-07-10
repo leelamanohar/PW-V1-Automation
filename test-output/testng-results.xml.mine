@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[STEP1]]>
+    </line>
+    <line>
+      <![CDATA[LoginPagewindow maximized]]>
+    </line>
+    <line>
+      <![CDATA[PW Login Button is Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP4]]>
+    </line>
+    <line>
+      <![CDATA[PW Login Button is Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP6]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: PW Login Email]]>
+    </line>
+    <line>
+      <![CDATA[STEP8]]>
+    </line>
+    <line>
+      <![CDATA[Typed Value: bluecloud@propertyware.com' in PW Login Email]]>
+    </line>
+    <line>
+      <![CDATA[STEP10]]>
+    </line>
+    <line>
+      <![CDATA[Typed Value: Realpage12' in PW Login Password]]>
+    </line>
+    <line>
+      <![CDATA[STEP12]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: PW Login Button]]>
+    </line>
+    <line>
+      <![CDATA[STEP14]]>
+    </line>
+    <line>
+      <![CDATA[PW Logout Button is Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP16]]>
+    </line>
+    <line>
+      <![CDATA[PW Logout Button is Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP18]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: PW Logout Button]]>
+    </line>
+    <line>
+      <![CDATA[STEP20]]>
+    </line>
+    <line>
+      <![CDATA[PW Login Button is Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP22]]>
+    </line>
+    <line>
+      <![CDATA[PW Login Button is Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP24]]>
+    </line>
+    <line>
+      <![CDATA[STEP25]]>
+    </line>
+    <line>
+      <![CDATA[STEP26]]>
+    </line>
+    <line>
+      <![CDATA[LoginPagewindow maximized]]>
+    </line>
+    <line>
+      <![CDATA[PW Login Button is Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP29]]>
+    </line>
+    <line>
+      <![CDATA[PW Login Button is Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP31]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: PW Login Email]]>
+    </line>
+    <line>
+      <![CDATA[STEP33]]>
+    </line>
+    <line>
+      <![CDATA[Typed Value: NegativeLoginTest@propertyware.com' in PW Login Email]]>
+    </line>
+    <line>
+      <![CDATA[STEP35]]>
+    </line>
+    <line>
+      <![CDATA[Typed Value: Realpage' in PW Login Password]]>
+    </line>
+    <line>
+      <![CDATA[STEP37]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on: PW Login Button]]>
+    </line>
+    <line>
+      <![CDATA[STEP39]]>
+    </line>
+    <line>
+      <![CDATA[STEP40]]>
+    </line>
+    <line>
+      <![CDATA[PW Logout Button is not Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP42]]>
+    </line>
+    <line>
+      <![CDATA[STEP43]]>
+    </line>
+    <line>
+      <![CDATA[PW Logout Button is not Displayed ]]>
+    </line>
+    <line>
+      <![CDATA[STEP45]]>
+    </line>
+    <line>
+      <![CDATA[STEP46]]>
+    </line>
+    <line>
+      <![CDATA[<br> <img src="C:\workspace\PropertywareAutomation\ScreenShots\1425481340767.png" alt="Screen shot not available" height="700" width="800"> <br>]]>
+    </line>
+  </reporter-output>
+  <suite name="Smoke Suite" duration-ms="110375" started-at="2015-03-04T15:00:31Z" finished-at="2015-03-04T15:02:22Z">
+    <groups>
+      <group name="PWSmokeTest">
+        <method signature="PWTC1.pwTestScenario1(java.util.Map)[pri:0, instance:com.rp.pw.test.cases.PWTC1@29de03]" name="pwTestScenario1" class="com.rp.pw.test.cases.PWTC1"/>
+      </group> <!-- PWSmokeTest -->
+    </groups>
+    <test name="PWLogin" duration-ms="110375" started-at="2015-03-04T15:00:31Z" finished-at="2015-03-04T15:02:22Z">
+      <class name="com.rp.pw.test.cases.PWTC1">
+        <test-method status="PASS" signature="indexDescription()[pri:0, instance:com.rp.pw.test.cases.PWTC1@29de03]" name="indexDescription" is-config="true" duration-ms="13" started-at="2015-03-04T20:30:31Z" finished-at="2015-03-04T20:30:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- indexDescription -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.rp.pw.test.cases.PWTC1@29de03]" name="setUp" is-config="true" duration-ms="10271" started-at="2015-03-04T20:30:33Z" finished-at="2015-03-04T20:30:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="pwTestScenario1(java.util.Map)[pri:0, instance:com.rp.pw.test.cases.PWTC1@29de03]" name="pwTestScenario1" duration-ms="49672" started-at="2015-03-04T20:30:43Z" data-provider="DataProvider" finished-at="2015-03-04T20:31:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=Realpage12, Username=bluecloud@propertyware.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[STEP1]]>
+            </line>
+            <line>
+              <![CDATA[LoginPagewindow maximized]]>
+            </line>
+            <line>
+              <![CDATA[PW Login Button is Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP4]]>
+            </line>
+            <line>
+              <![CDATA[PW Login Button is Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP6]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: PW Login Email]]>
+            </line>
+            <line>
+              <![CDATA[STEP8]]>
+            </line>
+            <line>
+              <![CDATA[Typed Value: bluecloud@propertyware.com' in PW Login Email]]>
+            </line>
+            <line>
+              <![CDATA[STEP10]]>
+            </line>
+            <line>
+              <![CDATA[Typed Value: Realpage12' in PW Login Password]]>
+            </line>
+            <line>
+              <![CDATA[STEP12]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: PW Login Button]]>
+            </line>
+            <line>
+              <![CDATA[STEP14]]>
+            </line>
+            <line>
+              <![CDATA[PW Logout Button is Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP16]]>
+            </line>
+            <line>
+              <![CDATA[PW Logout Button is Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP18]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: PW Logout Button]]>
+            </line>
+            <line>
+              <![CDATA[STEP20]]>
+            </line>
+            <line>
+              <![CDATA[PW Login Button is Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP22]]>
+            </line>
+            <line>
+              <![CDATA[PW Login Button is Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP24]]>
+            </line>
+            <line>
+              <![CDATA[STEP25]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- pwTestScenario1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rp.pw.test.cases.PWTC1@29de03]" name="tearDown" is-config="true" duration-ms="414" started-at="2015-03-04T20:31:33Z" finished-at="2015-03-04T20:31:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.rp.pw.test.cases.PWTC1@29de03]" name="setUp" is-config="true" duration-ms="9744" started-at="2015-03-04T20:31:33Z" finished-at="2015-03-04T20:31:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="pwTestScenario1(java.util.Map)[pri:0, instance:com.rp.pw.test.cases.PWTC1@29de03]" name="pwTestScenario1" duration-ms="37244" started-at="2015-03-04T20:31:43Z" data-provider="DataProvider" finished-at="2015-03-04T20:32:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=Realpage, Username=NegativeLoginTest@propertyware.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.listeners.ATUReportsListener.onTestSuccess(Unknown Source)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1899)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:778)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP26]]>
+            </line>
+            <line>
+              <![CDATA[LoginPagewindow maximized]]>
+            </line>
+            <line>
+              <![CDATA[PW Login Button is Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP29]]>
+            </line>
+            <line>
+              <![CDATA[PW Login Button is Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP31]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: PW Login Email]]>
+            </line>
+            <line>
+              <![CDATA[STEP33]]>
+            </line>
+            <line>
+              <![CDATA[Typed Value: NegativeLoginTest@propertyware.com' in PW Login Email]]>
+            </line>
+            <line>
+              <![CDATA[STEP35]]>
+            </line>
+            <line>
+              <![CDATA[Typed Value: Realpage' in PW Login Password]]>
+            </line>
+            <line>
+              <![CDATA[STEP37]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on: PW Login Button]]>
+            </line>
+            <line>
+              <![CDATA[STEP39]]>
+            </line>
+            <line>
+              <![CDATA[STEP40]]>
+            </line>
+            <line>
+              <![CDATA[PW Logout Button is not Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP42]]>
+            </line>
+            <line>
+              <![CDATA[STEP43]]>
+            </line>
+            <line>
+              <![CDATA[PW Logout Button is not Displayed ]]>
+            </line>
+            <line>
+              <![CDATA[STEP45]]>
+            </line>
+            <line>
+              <![CDATA[STEP46]]>
+            </line>
+            <line>
+              <![CDATA[<br> <img src="C:\workspace\PropertywareAutomation\ScreenShots\1425481340767.png" alt="Screen shot not available" height="700" width="800"> <br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- pwTestScenario1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rp.pw.test.cases.PWTC1@29de03]" name="tearDown" is-config="true" duration-ms="530" started-at="2015-03-04T20:32:21Z" finished-at="2015-03-04T20:32:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.rp.pw.test.cases.PWTC1 -->
+      <class name="com.rp.pw.test.data.setup.OS_Startup">
+        <test-method status="PASS" signature="setUpTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.rp.pw.test.data.setup.OS_Startup@954549]" name="setUpTest" is-config="true" duration-ms="64" started-at="2015-03-04T20:30:31Z" finished-at="2015-03-04T20:30:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[27.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="closeSetup()[pri:0, instance:com.rp.pw.test.data.setup.OS_Startup@954549]" name="closeSetup" is-config="true" duration-ms="9310" started-at="2015-03-04T20:32:22Z" finished-at="2015-03-04T20:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSetup -->
+      </class> <!-- com.rp.pw.test.data.setup.OS_Startup -->
+    </test> <!-- PWLogin -->
+  </suite> <!-- Smoke Suite -->
+</testng-results>

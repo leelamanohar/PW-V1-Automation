@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pie Charts</title>
+
+        <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../HTML_Design_Files/CSS/jquery.jqplot.css" />
+
+        <script type="text/javascript" src="../../../../../../../../../../../HTML_Design_Files/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../../../../../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script language="javascript" type="text/javascript" src="../../../../../../../../../../../HTML_Design_Files/JS/excanvas.js"></script>
+        <![endif]-->
+
+        <script language="javascript" type="text/javascript" src="../../../../../../../../../../../HTML_Design_Files/JS/jqplot.pieRenderer.min.js"></script>
+        <script language="javascript" type="text/javascript">$(document).ready(function() { $(".exception").hide(); $("#showmenu").show(); $('#showmenu').click(function() { $('.exception').toggle("slide"); }); });        </script>    </head>
+    <body>
+        <table id="mainTable">
+            <tr id="header" >
+                <td id="logo"><img src="../../../../../../../../../../../HTML_Design_Files/IMG/atu.jpg" alt="Logo" height="80" width="140" /> <br/><i style="float:left;padding-left:20px;font-size:12px">Reflections of Visionary Minds</i></td>
+                <td id="headertext">
+           Propertyware Automation Report: Smoke Tests         
+<div style="padding-right:20px;float:right"><img src="../../../../../../../../../../../HTML_Design_Files/IMG/RealpageLogo.png" height="70" width="140" /></div>                </td>
+            </tr>
+
+            <tr id="container">
+                <td id="menu">
+                    <ul> 
+
+ <li class="menuStyle"><a href="../../../../../../../../../../../index.html" >Index</a></li><li style="padding-top: 4px;"><a href="../../../../../../../../../../ConsolidatedPage.html" >Consolidated Page</a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">   
+                    <div class="info">
+                        The following table lists down the Sequential Steps during the Run <br/>
+TestCase Name: <b>pwTestScenario1  :  Iteration 1</b><br/>                        Time Taken for Executing: <b>58 Sec</b> <br/>
+                        Current Run Number: <b>Run 12</b></br>
+Method Type: <b>Test Method</b></br>                    </div>
+<div class="info"><br/><b>Requirement Coverage/ TestCase Description</b><br/><br/>Login, Navigate to Modules, Logout</div>
+<div class="chartStyle summary" style="background-color: #646D7E;width: 30%; height: 200px;">          
+                        <b>Execution Platform Details</b><br/><br/>
+                        <table>
+                            <tr>
+                                <td>O.S</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Windows 7, x86Bit, v6.1</td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>1.7.0_60-ea</td>
+                            </tr>
+
+                            <tr>
+                                <td>Hostname</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>RPIPL-NB-MGR050</td>
+                            </tr>
+
+                            <tr>
+                                <td>Selenium</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>2.42.2</td>
+                            </tr>
+                        </table>  
+                    </div>
+                   
+ <div class="chartStyle summary" style="background-color: #7BB661;margin-left: 20px; height: 200px;width: 30%; ">
+                        <b>Summary</b><br/><br/>
+                        <table>
+                            <tr>
+                                <td>Status</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Passed</td>
+                            </tr>
+                            <tr>
+                                <td>Execution Date</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>04-Mar-2015 08:24:32</td>
+                            </tr>
+                            
+
+                            <tr>
+                                <td>Browser</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>firefox,v27.0</td>
+                            </tr>
+                        </table> 
+                    </div>
+ <div class="chartStyle summary" style="background-color: #7F525D;margin-left: 20px; height: 200px;width: 30%; ">
+                       <b>Author Info</b><br/><br/>
+                        <table>
+                            <tr>
+                                <td>Author Name</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>Propertyware Automation Team</td>                                
+                            </tr>
+                            <tr>
+                                <td>Creation Date</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>04-Mar-2015 08:22:39</td>
+                            </tr>
+                            <tr>
+                                <td>Version</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>1.0</td>
+                            </tr>
+                            <tr>
+                                <td>System User</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>LKomma</td>
+                            </tr>
+                        </table> 
+                    </div>
+                    
+   <div>
+                        <table class="chartStyle" id="tableStyle" style="height:50px; float: left">
+                            <tr>
+                                <th>S.No</th>
+                                <th>Step Description</th>
+                                <th>Input Value</th>
+                                <th>Expected Value</th>
+                                <th>Actual Value</th>
+                                <th>Time</th>
+                                <th>Line No</th>
+                                <th>Status</th>
+                                <th>Screen shot</th>
+                            </tr>
+                           
+
+<tr><td>1</td>
+<td>window maximized</td>
+<td></td>
+<td>Window Should be Maximized</td>
+<td>Window is Maximized</td>
+<td>22 Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>2</td>
+<td style="text-align:left" colspan="8">LoginPagewindow maximized</td></tr><tr><td>3</td>
+<td style="text-align:left" colspan="8">PW Login Button is Displayed </td></tr><tr><td>4</td>
+<td>Element DisplayPW Login Button</td>
+<td>--</td>
+<td>PW Login Button Should be Displayed </td>
+<td>PW Login Button is Displayed </td>
+<td>5 Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>5</td>
+<td style="text-align:left" colspan="8">PW Login Button is Displayed </td></tr><tr><td>6</td>
+<td>Element DisplayPW Login Button</td>
+<td>--</td>
+<td>PW Login Button Should be Displayed </td>
+<td>PW Login Button is Displayed </td>
+<td>51 Milli Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>7</td>
+<td style="text-align:left" colspan="8">Clicked on: PW Login Email</td></tr><tr><td>8</td>
+<td>Clicked on: PW Login Email</td>
+<td>--</td>
+<td>PW Login Email Should be clicked</td>
+<td>PW Login Email is clicked</td>
+<td>192 Milli Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>9</td>
+<td style="text-align:left" colspan="8">Typed Value: bluecloud@propertyware.com' in PW Login Email</td></tr><tr><td>10</td>
+<td>SendKeys: PW Login Email</td>
+<td>bluecloud@propertyware.com</td>
+<td>bluecloud@propertyware.com</td>
+<td>bluecloud@propertyware.com</td>
+<td>235 Milli Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>11</td>
+<td style="text-align:left" colspan="8">Typed Value: Realpage12' in PW Login Password</td></tr><tr><td>12</td>
+<td>SendKeys: PW Login Password</td>
+<td>Realpage12</td>
+<td>Realpage12</td>
+<td>Realpage12</td>
+<td>745 Milli Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>13</td>
+<td style="text-align:left" colspan="8">Clicked on: PW Login Button</td></tr><tr><td>14</td>
+<td>Clicked on: PW Login Button</td>
+<td>--</td>
+<td>PW Login Button Should be clicked</td>
+<td>PW Login Button is clicked</td>
+<td>16 Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>15</td>
+<td style="text-align:left" colspan="8">PW Logout Button is Displayed </td></tr><tr><td>16</td>
+<td>Element DisplayPW Logout Button</td>
+<td>--</td>
+<td>PW Logout Button Should be Displayed </td>
+<td>PW Logout Button is Displayed </td>
+<td>10 Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>17</td>
+<td style="text-align:left" colspan="8">PW Logout Button is Displayed </td></tr><tr><td>18</td>
+<td>Element DisplayPW Logout Button</td>
+<td>--</td>
+<td>PW Logout Button Should be Displayed </td>
+<td>PW Logout Button is Displayed </td>
+<td>104 Milli Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>19</td>
+<td style="text-align:left" colspan="8">Clicked on: PW Logout Button</td></tr><tr><td>20</td>
+<td>Clicked on: PW Logout Button</td>
+<td>--</td>
+<td>PW Logout Button Should be clicked</td>
+<td>PW Logout Button is clicked</td>
+<td>2 Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>21</td>
+<td style="text-align:left" colspan="8">PW Login Button is Displayed </td></tr><tr><td>22</td>
+<td>Element DisplayPW Login Button</td>
+<td>--</td>
+<td>PW Login Button Should be Displayed </td>
+<td>PW Login Button is Displayed </td>
+<td>10 Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>23</td>
+<td style="text-align:left" colspan="8">PW Login Button is Displayed </td></tr><tr><td>24</td>
+<td>Element DisplayPW Login Button</td>
+<td>--</td>
+<td>PW Login Button Should be Displayed </td>
+<td>PW Login Button is Displayed </td>
+<td>60 Milli Sec</td>
+<td>118</td>
+<td><img style="height:20px;width:20px;border:none"  alt="PASS" src="../../../../../../../../../../..//HTML_Design_Files/IMG/logpass.png" /></td>
+<td></td>
+</tr><tr><td>25</td>
+<td>*****End of user session*******</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 Sec</td>
+<td>142</td>
+<td><img style="height:20px;width:20px;border:none" alt="INFO" src="../../../../../../../../../../..//HTML_Design_Files/IMG/loginfo.png" /></td>
+<td><a href="img/25.PNG"><img alt="No Screenshot" src="img/25.PNG"/></a></td>
+</tr>
+                        </div></table>  
+<div class="chartStyle summary" style="color: black;width: 98%; height: 100%; padding-bottom: 30px;">          
+
+<b>Parameters: </b><br/>Param: {Password=Realpage12, Username=bluecloud@propertyware.com}<br/></div>                    
+
+                </td>
+            </tr>            <tr id="footer">
+                <td colspan="2">
+                    Best Viewed in &nbsp;
+                    <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> &nbsp;
+                    <a href="http://www.apple.com/in/safari/">Safari</a>&nbsp;
+                    <a href="http://www.google.com/chrome/">Chrome</a>&nbsp;
+                    <a href="http://windows.microsoft.com/en-IN/internet-explorer/download-ie">IE 9 & Above</a>&nbsp;
+                    &nbsp;
+ATU Reporter Version: v5.5 BETA                    &nbsp;
+                    Reports by: <a href="http://automationtestingutilities.blogspot.in/">Automation Testing Utilities</a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

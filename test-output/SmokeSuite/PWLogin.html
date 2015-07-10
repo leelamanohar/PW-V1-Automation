@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>TestNG:  PWLogin</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PWLogin</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 20 15:47:27 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>35 seconds (35141 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>VMMTestGroup </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.rp.vmm.test.cases.PW22433_VMMSmokeTest.vvmSmokeTest()'><b>vvmSmokeTest</b><br>Test class: com.rp.vmm.test.cases.PW22433_VMMSmokeTest<br>Parameters: {OwnerPhone=(123) 456-7890, Description=VMMAutomation, OwnerFirstName=OwnerFirstName, OwnerZipCode=12345, OwnerAddress1=Address1, OwnerAddress2=Address2, OwnerAltPhoneNo=(123) 456-7890, OwnerWorkPhone=(123) 456-7890, PassWord=Demo1234!, OwnerState=State1, OwnerMobileNo=(123) 456-7890, VMMPortfolioSearch=AUTO, OwnerCity=City1, OwnerLastName=OwnerLastName, EmailId=ross.lewellyn@realpage.com, OwnerSearchKey=OwnerFirstName}<br/>
+<a href="#Output-24201847" onClick='toggleBox("Output-24201847", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24201847" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24201847">
+STEP1<br/>
+Vmm_Loginpagewindow maximized<br/>
+STEP3<br/>
+STEP4<br/>
+Clicked on: Sign In Button<br/>
+STEP6<br/>
+Clicked on: Contacts Button<br/>
+STEP8<br/>
+Clicked on: Contacts Search Query<br/>
+STEP10<br/>
+STEP11<br/>
+Clicked on: Contacts Search Button<br/>
+STEP13<br/>
+Clicked on: DesiredContact Button<br/>
+STEP15<br/>
+Verified text Successfully  : OwnerFirstName of Contact FirstName Field<br/>
+STEP17<br/>
+Verified text Successfully  : OwnerLastName of Contact LastName Field<br/>
+STEP19<br/>
+Verified text Successfully  : (123) 456-7890 of Contact Phone Number Field<br/>
+STEP21<br/>
+Verified text Successfully  : Address1 of Contact Address Field<br/>
+STEP23<br/>
+Verified text Successfully  : (123) 456-7890 of Contact Alt Phone Field<br/>
+STEP25<br/>
+Verified text Successfully  : Address2 of Contact Address2 Field<br/>
+STEP27<br/>
+Verified text Successfully  : (123) 456-7890 of Contact MobilePhone Field<br/>
+STEP29<br/>
+Verified text Successfully  : City1 of Contact City Field<br/>
+STEP31<br/>
+Verified text Successfully  : (123) 456-7890 of Contact WorkPhone Field<br/>
+STEP33<br/>
+Verified text Successfully  : State1 of Contact State Field<br/>
+STEP35<br/>
+Verified text Successfully  : 12345 of Contact ZipCode Field<br/>
+STEP37<br/>
+Clicked on: Contact Close Button<br/>
+STEP39<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.rp.vmm.test.cases.PW22433_VMMSmokeTest@1a79447</td></tr>
+</table><p>
+</body>
+</html>

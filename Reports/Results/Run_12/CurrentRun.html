@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Current Run Reports</title>
+
+        <link rel="stylesheet" type="text/css" href="../../HTML_Design_Files/CSS/design.css" />
+        <link rel="stylesheet" type="text/css" href="../../HTML_Design_Files/CSS/jquery.jqplot.css" />
+
+        <script type="text/javascript" src="../../HTML_Design_Files/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="../../HTML_Design_Files/JS/jquery.jqplot.min.js"></script>
+        <!--[if lt IE 9]>
+        <script language="javascript" type="text/javascript" src="../../HTML_Design_Files/JS/excanvas.js"></script>
+        <![endif]-->
+
+        <script language="javascript" type="text/javascript" src="../../HTML_Design_Files/JS/jqplot.pieRenderer.min.js"></script>
+        <script type="text/javascript" src="pieChart.js"></script>
+
+<script language="javascript" type="text/javascript">$(document).ready(function() { $(".video").hide();$("#showmenu").show(); $('#showmenu').click(function(){ $('.video').toggle("slide"); }); });</script><style>#showmenu{text-align:center; padding-top:350px;color: #585858; font-size: 14px;}#video{height: 550px;    margin-top: 5px;    width: 97%;    border-style: solid;    border-width: 1px;    border-color: #21ABCD;    /* Shadow for boxes */    -moz-box-shadow: 0 0 10px #CCCCCC;    -ms-box-shadow: 0 0 10px #CCCCCC;    -webkit-box-shadow: 0 0 10px #CCCCCC;    box-shadow: 0 0 10px #CCCCCC;    zoom: 1;    filter: progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=0),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=90),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=180),        progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=2, Direction=270);    background-color: white;}</style><script language="javascript" type="text/javascript">
+$(document).ready(function() {
+	$('#tcFilter').on('change',function(){
+    if($(this).val()=='pass'){
+        $('.pass').show();
+		$('.fail').hide();
+		$('.skip').hide();
+		$('.config').hide();
+    }
+	if($(this).val()=='fail'){
+        $('.pass').hide();
+		$('.fail').show();
+		$('.skip').hide();
+		$('.config').hide();
+    }
+	
+	if($(this).val()=='skip'){
+        $('.pass').hide();
+		$('.fail').hide();
+		$('.skip').show();
+		$('.config').hide();
+    }
+	
+if($(this).val()=='tests'){ $('.pass').show(); $('.fail').show(); $('.skip').show(); $('.config').hide(); }	if($(this).val()=='config'){
+        $('.pass').hide();
+		$('.fail').hide();
+		$('.skip').hide();
+		$('.config').show();
+    }
+	
+	if($(this).val()=='all'){
+        $('.pass').show();
+		$('.fail').show();
+		$('.skip').show();
+		$('.config').show();
+    }
+  });
+});       
+</script>
+<script language="javascript" type="text/javascript">$(document).ready(function() {	$('#suiteFilter').on('change',function(){if($(this).val()=='all'){      $('.all').show();  }if($(this).val()=='atuSuiteNameMapper2'){      $('.all').hide();$('.atuSuiteNameMapper2').show(); }  }); });</script>
+    </head>
+    <body>
+        <table id="mainTable">
+            <tr id="header" >
+                <td id="logo"><img src="../../HTML_Design_Files/IMG/atu.jpg" alt="Logo" height="70" width="140" /> <br/><i style="float:left;padding-left:20px;font-size:12px">Reflections of Visionary Minds</i></td>
+                <td id="headertext">
+                    Propertyware Automation Report: Smoke Tests<div style="padding-right:20px;float:right"><img src="../../HTML_Design_Files/IMG/RealpageLogo.png" height="70" width="140" /> </i></div></td>
+
+            </tr>
+
+            <tr id="container">
+                <td id="menu">
+                    <ul> 
+
+ <li class="menuStyle"><a href="../../index.html" >Index</a></li><li style="padding-top: 4px;"><a href="../ConsolidatedPage.html" >Consolidated Page</a></li>
+
+
+                    </ul>
+                </td>
+
+
+<td id="content">
+                    <div class="info">
+                        The following pie chart demonstrates the percentage of Passed, Failed and Skipped Test Cases<br/>
+                        Time Taken for Executing below Test Cases: <b>124 Sec</b> <br/>
+                        Current Run Number: <b>Run 12</b>
+                    </div>
+<div class="info"><br/><b>Run Description</b><br/><br/>PW Smoke Test Suite</div>                    <div>
+                        <div class="chartStyle summary" style="width: 32%;background-color: #3B9C9C;">
+                            <b>Summary</b><br/><br/>
+                            <table>
+                            <tr>
+                                <td>Execution Date</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>04-Mar-2015 08:24:32</td>
+                            </tr>
+                            <tr>
+                                <td>Total Test Cases</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Passed</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>1</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Failed</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr>
+                                <td>Skipped</td>
+                                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                                <td>0</td>
+                            </tr>
+                        </table> 
+                        </div>                        <div class="chartStyle" style="text-align: left;margin-left: 30px;float: left;width: 60%;">                        
+                            <div id="chart" style="height:300px;color:black;"></div>
+                        </div>
+                    </div>
+                    <div>
+
+<p id="showmenu">No Video Recording Available</p>
+<div style="float:left;  color: #585858; font-size: 14px;">	<select id="tcFilter" class="filter">
+						<option class="filterOption" value="all">All Methods</option>
+						<option class="filterOption" value="tests">Test Methods</option>
+						<option class="filterOption" value="pass">Passed Test Cases</option>
+						<option class="filterOption" value="fail">Failed Test Cases</option>
+						<option class="filterOption" value="skip">Skipped Test Cases</option>
+						<option class="filterOption" value="config">Configuration Methods</option>
+					</select>	Filter Methods &nbsp;</div>
+<div style="float:left;  color: #585858; font-size: 14px;">	<select id="suiteFilter" class="filter">
+<option class="filterOption" value="all">All Suites</option>
+
+<option class="filterOption" value="atuSuiteNameMapper2">Smoke Suite</option>
+
+</select>Filter Suites&nbsp;&nbsp;</div>
+                        <table id="tableStyle" class="chartStyle" style="height:50px; float: left">
+                            <tr>
+                                <th>Suite Name</th>
+                                <th>Package Name</th>
+                                <th>Class Name</th>
+                                <th>Method Type</th>
+                                <th>Test Case Name</th>
+<th>Iteration</th>                                <th>Time</th>
+                                <th style="width: 7%">Status</th>
+                            </tr>
+
+                            <tr class="all pass atuSuiteNameMapper2">
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration1\pwTestScenario1.html">Smoke Suite</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration1\pwTestScenario1.html">com.rp.pw.test.cases</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration1\pwTestScenario1.html">PWTC1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration1\pwTestScenario1.html">Test Method</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration1\pwTestScenario1.html">pwTestScenario1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration1\pwTestScenario1.html">1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration1\pwTestScenario1.html">58 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all fail atuSuiteNameMapper2">
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration2\pwTestScenario1.html">Smoke Suite</a></td>
+                              <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration2\pwTestScenario1.html">com.rp.pw.test.cases</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration2\pwTestScenario1.html">PWTC1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration2\pwTestScenario1.html">Test Method</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration2\pwTestScenario1.html">pwTestScenario1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration2\pwTestScenario1.html">2</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\pwTestScenario1_Iteration2\pwTestScenario1.html">35 Sec</a></td>
+                                <td><img  style="border: none;width: 25px" src="../../HTML_Design_Files/IMG/fail.png"></td>
+                            </tr>
+                            <tr class="all config atuSuiteNameMapper2">
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\setUpTest_Iteration1\setUpTest.html">Smoke Suite</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\setUpTest_Iteration1\setUpTest.html">com.rp.pw.test.data.setup</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\setUpTest_Iteration1\setUpTest.html">OS_Startup</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\setUpTest_Iteration1\setUpTest.html">Before Test</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\setUpTest_Iteration1\setUpTest.html">setUpTest</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\setUpTest_Iteration1\setUpTest.html">1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\setUpTest_Iteration1\setUpTest.html">43 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config atuSuiteNameMapper2">
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\indexDescription_Iteration1\indexDescription.html">Smoke Suite</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\indexDescription_Iteration1\indexDescription.html">com.rp.pw.test.cases</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\indexDescription_Iteration1\indexDescription.html">PWTC1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\indexDescription_Iteration1\indexDescription.html">Before Class</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\indexDescription_Iteration1\indexDescription.html">indexDescription</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\indexDescription_Iteration1\indexDescription.html">1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\indexDescription_Iteration1\indexDescription.html">11 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config atuSuiteNameMapper2">
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">Smoke Suite</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">com.rp.pw.test.cases</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">PWTC1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">Before Method</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">setUp</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">10 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config atuSuiteNameMapper2">
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">Smoke Suite</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">com.rp.pw.test.cases</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">PWTC1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">After Method</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">tearDown</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">420 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config atuSuiteNameMapper2">
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">Smoke Suite</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">com.rp.pw.test.cases</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">PWTC1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">Before Method</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">setUp</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\setUp_Iteration1\setUp.html">9 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config atuSuiteNameMapper2">
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">Smoke Suite</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">com.rp.pw.test.cases</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">PWTC1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">After Method</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">tearDown</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\cases\PWTC1\tearDown_Iteration1\tearDown.html">337 Milli Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                            <tr class="all config atuSuiteNameMapper2">
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\closeSetup_Iteration1\closeSetup.html">Smoke Suite</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\closeSetup_Iteration1\closeSetup.html">com.rp.pw.test.data.setup</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\closeSetup_Iteration1\closeSetup.html">OS_Startup</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\closeSetup_Iteration1\closeSetup.html">After Suite</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\closeSetup_Iteration1\closeSetup.html">closeSetup</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\closeSetup_Iteration1\closeSetup.html">1</a></td>
+                                <td><a href="Smoke Suite\PWLogin\com\rp\pw\test\data\setup\OS_Startup\closeSetup_Iteration1\closeSetup.html">8 Sec</a></td>
+                                <td><img  style="border: none; width: 25px" src="../../HTML_Design_Files/IMG/pass.png"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>            <tr id="footer">
+                <td colspan="2">
+                    Best Viewed in &nbsp;
+                    <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> &nbsp;
+                    <a href="http://www.apple.com/in/safari/">Safari</a>&nbsp;
+                    <a href="http://www.google.com/chrome/">Chrome</a>&nbsp;
+                    <a href="http://windows.microsoft.com/en-IN/internet-explorer/download-ie">IE 9 & Above</a>&nbsp;
+                    &nbsp;
+ATU Reporter Version: v5.5 BETA                    &nbsp;
+                    Reports by: <a href="http://automationtestingutilities.blogspot.in/">Automation Testing Utilities</a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+[2015-03-04-30-43] [pool-1-thread-1] - INFO : Driver initialized
+[2015-03-04-30-50] [pool-1-thread-1] - INFO : Navigate to URL
+[2015-03-04-30-54] [pool-1-thread-1] - INFO : *****Start - PW Login********
+[2015-03-04-30-59] [pool-1-thread-1] - INFO : PW Login page is displayed
+[2015-03-04-30-59] [pool-1-thread-1] - INFO : check login page value: true
+[2015-03-04-31-21] [pool-1-thread-1] - INFO : *****End - PW Login********
+[2015-03-04-31-21] [pool-1-thread-1] - INFO : Login completed
+[2015-03-04-31-21] [pool-1-thread-1] - INFO : User is logged into the application
+[2015-03-04-31-21] [pool-1-thread-1] - WARN : Skipped Navigate to modules
+[2015-03-04-31-21] [pool-1-thread-1] - INFO : *****Start - PW Logout********
+[2015-03-04-31-21] [pool-1-thread-1] - INFO : check login value: true
+[2015-03-04-31-21] [pool-1-thread-1] - INFO : Logout link is displayed
+[2015-03-04-31-32] [pool-1-thread-1] - INFO : PW Login page is displayed
+[2015-03-04-31-32] [pool-1-thread-1] - INFO : User successfully logged out of the application
+[2015-03-04-31-32] [pool-1-thread-1] - INFO : *****End - PW Logout********
+[2015-03-04-31-33] [pool-1-thread-1] - INFO : Logout completed
+[2015-03-04-31-43] [pool-1-thread-1] - INFO : Driver initialized
+[2015-03-04-31-53] [pool-1-thread-1] - INFO : Navigate to URL
+[2015-03-04-31-56] [pool-1-thread-1] - INFO : *****Start - PW Login********
+[2015-03-04-32-02] [pool-1-thread-1] - INFO : PW Login page is displayed
+[2015-03-04-32-02] [pool-1-thread-1] - INFO : check login page value: true
+[2015-03-04-32-15] [pool-1-thread-1] - INFO : *****End - PW Login********
+[2015-03-04-32-15] [pool-1-thread-1] - INFO : Login completed
+[2015-03-04-32-17] [pool-1-thread-1] - ERROR : User is NOT logged into the application
+[2015-03-04-32-18] [pool-1-thread-1] - WARN : Skipped Navigate to modules
+[2015-03-04-32-18] [pool-1-thread-1] - INFO : *****Start - PW Logout********
+[2015-03-04-32-18] [pool-1-thread-1] - INFO : check login value: false
+[2015-03-04-32-18] [pool-1-thread-1] - WARN : Logout link is NOT displayed
+[2015-03-04-32-19] [pool-1-thread-1] - INFO : *****End - PW Logout********
+[2015-03-04-32-20] [pool-1-thread-1] - INFO : Logout completed

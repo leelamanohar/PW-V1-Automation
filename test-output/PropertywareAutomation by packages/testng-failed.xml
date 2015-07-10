@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PropertywareAutomation by packages]">
+  <test name="com.rp.pw.test.cases(failed)">
+    <classes>
+      <class name="com.rp.pw.test.cases.PWTC1">
+        <methods>
+          <include name="closeSetup"/>
+          <include name="pwTestScenario1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.rp.pw.test.cases.PWTC1 -->
+    </classes>
+  </test> <!-- com.rp.pw.test.cases(failed) -->
+</suite> <!-- Failed suite [PropertywareAutomation by packages] -->
